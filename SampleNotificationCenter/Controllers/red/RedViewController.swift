@@ -16,6 +16,7 @@ class RedViewController: UIViewController {
 
     // MainTabBarControllerからViewControllerにモデルを渡しています
     //　MainTabBarControllerが呼ばれたらdidSetでregisterModel()も呼ばれるのでNotificationCenterクラスへの登録完了
+    // 登録してから通知を出さなきゃきけない
     var countModel: CountModel? {
         didSet {
             registerModel()
